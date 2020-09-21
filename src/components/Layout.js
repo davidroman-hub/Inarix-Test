@@ -58,4 +58,4 @@ const Layout = ({children,history}) => {
     )
 }
 
-export default Layout
+export default withRouter(Layout)
