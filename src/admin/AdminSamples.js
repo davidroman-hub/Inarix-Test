@@ -5,7 +5,7 @@ import {listSamples} from '../user/apiUser';
 import moment from 'moment';
 import SideBar from './SideBar';
 import '../styles/components/_samplesAdmin.scss'
-import semillas from '../images/trigo.jpg'
+import semillas from '../images/samples.png'
 
 const AdminSamples = () => {
 
