@@ -10,10 +10,8 @@ const IndividualSample = (props) => {
 
     const token = getCookie('accessToken')  //// <-- right one
     //const Id = getCookie('token')
-
     const [order, setOrder] = useState({});
     const [error, setError] = useState(false);
-
 
     const loadSingleOrder = orderId => {
         read(orderId,token).then( data => {
@@ -62,29 +60,25 @@ const IndividualSample = (props) => {
                                             {moment(order.createdAt).locale('es').format('LL')}
                                     </li>
                                         <h2 className='mt-2 mb-5 text-center' >METADATA :</h2>
-                                        {order.data?.map((p, pIndex) => (
-                                            <div className='mb-4' key={pIndex} style={{padding:'20px', border:'1px solid indigo'}}
-                                            
-                                            >
-                                                
-                                                {showInput('Latitude:', order.metadata.latitude)} 
-                                                {showInput('Longitude:', p.longitude)}  
-                                                {/* {showInput('Cantidad pedida del producto:', p.count)}   */}
-                                                {/* {showInput('ID del producto:', p._id)}    */}
-                                </div> ))}
-                                
+                                        
                         </ul>
             </div>
         )
     }
+    
+    // const item = order.metadata.map((i) => {
+    //     return(<h1>{i.latitude}</h1>)
+    // })
 
 
     return(
         <>
-            <h1>Soy Individual samples</h1>
+            <h1>INDIVIDUAL samples</h1>
             <div className='container'>
                 {showSingleSample()}
+                {/* {convert()} */}
                 {JSON.stringify(order.metadata)}
+            
             </div>
         </>
     )
