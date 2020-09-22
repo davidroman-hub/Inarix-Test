@@ -4,8 +4,8 @@ import axios from 'axios';
 import {authenticate, isAuth} from '../helpers/Helpers';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
-
-
+import inarixLogo from '../images/inarix-logo-h@3x.png'
+import '../styles/components/_signin.scss'
 
 const Signin = ({history}) => {
 
@@ -52,7 +52,7 @@ const Signin = ({history}) => {
 
     const SigninForm = () => {
         return(
-        <div className='Form-design'>
+        <div className='__Form-design'>
             <form className=''>
             <div className='form-group'>
                 <label className="text-muted">Strategy</label>
@@ -67,7 +67,7 @@ const Signin = ({history}) => {
                     <input onChange={handleChange('password')} value={password} type='password' className='form-control my-input'/>
                 </div>
                 <div className='text-center'>
-                    <button className='btn btn-primary send-button btn-lg' onClick={clickSubmit}>Singin</button>
+                    <button className='__button-1' onClick={clickSubmit}>Sign in</button>
                 </div>
             </form>
         </div>
@@ -83,9 +83,9 @@ const Signin = ({history}) => {
                     <ToastContainer/>
                     {isAuth() ? <Redirect to='/'/> : null}
                     <br/>
-                    <h2>Sign In</h2>
+                    
                     <div className='plant mb-2'>
-                        <img className='plant text-center img img-fluid' src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1596538045/Healing%20love/welcome_o7jzli.jpg' alt='healing-love'/>
+                        <img className='plant text-center img img-fluid' src={inarixLogo} alt='inarix-logo'/>
                     </div>
                         {SigninForm()}
                         <div className='mt-4'> 
