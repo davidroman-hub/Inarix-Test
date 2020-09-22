@@ -60,16 +60,12 @@ const IndividualSample = (props) => {
                                             {moment(order.createdAt).locale('es').format('LL')}
                                     </li>
                                         <h2 className='mt-2 mb-5 text-center' >METADATA :</h2>
-                                        
+                                        <h1>{order.metadata?.latitude}</h1>
                         </ul>
             </div>
         )
     }
     
-    // const item = order.metadata.map((i) => {
-    //     return(<h1>{i.latitude}</h1>)
-    // })
-
 
     return(
         <>

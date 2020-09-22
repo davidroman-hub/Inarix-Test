@@ -36,16 +36,14 @@ const AdminDashboard = () => {
     return(
         <>
         
-            {/* <h1 className='mt-5 mb-5'>{isAuth().email} Dashboard</h1> */}
             <div className='__admin-dashboard-flex' >
                 <div>
                     <Sidebar/>
                 </div>
-                <div className='__info-tables'>
+                <div className='__info-tables-samples'>
                     {LoadProfileInfo()}
                     
                 </div>
-                {/* {JSON.stringify(samples)} */}
                 
         </div>
         </>
