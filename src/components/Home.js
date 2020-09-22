@@ -1,5 +1,4 @@
 import React from 'react';
-import seeds from '../images/seeds.jpg';
 import computer from '../images/computer.png'
 import { Link } from 'react-router-dom';
 const Home = () => {

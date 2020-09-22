@@ -1,9 +1,9 @@
 
-import React,{useState,useEffect, Fragment} from 'react';
+import React,{useState,useEffect} from 'react';
 import {getCookie} from '../helpers/Helpers';
 import moment from 'moment';
 import { read } from './apiAdmin';
-import SingleMap from './Google';
+//import SingleMap from './Google';
 import samplesPhoto from '../images/samples.png';
 import SideBar from './SideBar'
 const IndividualSample = (props) => {
@@ -23,21 +23,6 @@ const IndividualSample = (props) => {
             }
         })
     }
-
-
-
-    const showInput = (key, value) => {
-        return (
-            <div className="input-group mb-2 mr-sm-2">
-                <div className="input-group-prepend">
-                    <div className="input-group-text">{key}</div>
-                </div>
-                <input type="text" value={value} className="form-control" readOnly/>
-            </div>
-        )
-    }
-
-
 
 
     useEffect (() => {

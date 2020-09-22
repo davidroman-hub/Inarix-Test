@@ -1,6 +1,6 @@
 import React, {useEffect,useState} from 'react'; 
 import {Link} from 'react-router-dom';
-import {isAuth, getCookie } from '../helpers/Helpers';
+import { getCookie } from '../helpers/Helpers';
 import {listSamples} from '../user/apiUser';
 import moment from 'moment';
 import SideBar from './SideBar';

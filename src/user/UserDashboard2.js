@@ -8,18 +8,10 @@ import moment from 'moment';
 const UserDashboard2 = () => {
 
     const token = getCookie('accessToken');
-    const Id = getCookie('accessToken');
 
     //console.log(token)
 
 
-    const [values, setValues] = useState({
-        
-        email: '',
-        buttonText: 'Update'
-    })
-
-    const { email} = values;
 
     const [samples, setSamples] = useState([])
     

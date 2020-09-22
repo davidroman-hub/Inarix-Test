@@ -20,7 +20,7 @@ const BrowseCereals = () => {
             }
         })
     }
-        const [loading, setLoading] = useState(false);
+        const [loading] = useState(false);
         const [search, setSearch] = useState("");
         const [filteredCereals, setFilteredCereals] = useState([]);
 

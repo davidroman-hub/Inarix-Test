@@ -1,5 +1,5 @@
 
-import {isAuth, getCookie} from '../helpers/Helpers';
+
 import {API} from '../Config';
 
 export const listSamples = (token) => {

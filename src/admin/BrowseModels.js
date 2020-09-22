@@ -18,7 +18,7 @@ const BrowseModels = () => {
             }
         })
     }
-        const [loading, setLoading] = useState(false);
+        const [loading] = useState(false);
         const [search, setSearch] = useState("");
         const [filteredModels, setFilteredModels] = useState([]);
 

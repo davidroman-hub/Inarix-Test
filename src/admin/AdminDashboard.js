@@ -1,6 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {isAuth } from '../helpers/Helpers';
 import Sidebar from './SideBar';
 import '../styles/components/_adminDash.scss';
 import inarixLogo from '../images/inarix-logo-h@3x.png';
