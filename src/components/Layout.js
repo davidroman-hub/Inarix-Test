@@ -22,7 +22,7 @@ const Layout = ({children,history,match}) => {
                 <ul className='navbar-nav mr-auto'>
                     
                     <li className="nav-item">
-                        <Link className="nav-link" to='/' style={{color:'#EBEBEB', fontWeight:'bold'}}>á propos</Link>
+                        <Link className="nav-link" to='/' style={{color:'#EBEBEB', fontWeight:'bold'}}>à propos</Link>
                     </li>
                     
                     
