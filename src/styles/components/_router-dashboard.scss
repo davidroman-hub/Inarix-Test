@@ -1,0 +1,43 @@
+
+
+.__info-routerDashboard{
+    
+    margin-top: 10%;
+    
+    & h1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    & h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    & h4{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .image-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-logo img{
+        height: 150px;
+        @media(max-width: 769px){
+            height: 100px;
+        }
+    }
+}
+
+
+.__links-dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .__user-dashboard{
+        margin-right: 40px;
+    }
+}
