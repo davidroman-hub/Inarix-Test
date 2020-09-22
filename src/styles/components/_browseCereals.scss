@@ -2,16 +2,22 @@
     display: flex;
 }
 
-.__info-tables-samples{
+.__info-tables-search{
     margin-left: 15%;
     margin-right: 15%;
     @media(max-width: 769px){
-        margin-left: 0%;
+        margin-left: 2%;
         margin-right: 0%;
     }
 }
 
-
-.container-samples{
-    padding: 30px;
+.container-search{
+    padding: 5px;
+    
 }
+
+.input-search{
+    padding: 20px;
+}
+
+

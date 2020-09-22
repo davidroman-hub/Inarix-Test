@@ -5,6 +5,7 @@ import {listSamples} from '../user/apiUser';
 import moment from 'moment';
 import SideBar from './SideBar';
 import '../styles/components/_samplesAdmin.scss'
+import semillas from '../images/trigo.jpg'
 
 const AdminSamples = () => {
 
@@ -32,6 +33,9 @@ const AdminSamples = () => {
                         {samples.data?.map((s,i) => (
                             <div className='container-samples' >
                             <ul key={i} className='list-group-item'>
+                            <div className='photo-cereal'>
+                                <img src={semillas} alt='/'  style={{maxHeight:'100%', maxWidth:'100%'}}/>
+                            </div>
                                 <li className="mb-1 mt-2 text-center"  style={{color:'#888888', backgroundColor:'#ffc100', fontWeight:'bolder'}}>Sample ID {s.id}</li>
                                 <li className="mb-1 mt-2 text-center ">created by: {s.userId}</li>
                                 <li className="mb-1 mt-2 text-center " style={{fontWeight:'bold'}}>Created At:{" "}
