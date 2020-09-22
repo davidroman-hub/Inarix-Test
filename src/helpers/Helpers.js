@@ -5,7 +5,8 @@ import cookie from 'js-cookie';
 // set in cookie 'token'
 export const setCookie = (key, value) => {
     if(window !== 'undefined' ){
-        cookie.set(key, value,{
+        cookie.set(key, value,
+            {
             expires: 1
         })
     }

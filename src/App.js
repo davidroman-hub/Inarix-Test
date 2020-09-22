@@ -21,7 +21,7 @@ import BrowseModels from './admin/BrowseModels';
 import BrowsePredictions from './admin/BrowsePredictions';
 import BrowseSamples from './admin/BrowseSamples';
 import BrowseUsers from './admin/BrowseUsers';
-
+import IndiviualSample from './admin/IndividualSamples';
 
 
 
@@ -37,9 +37,9 @@ function App() {
           <PrivateRoute exact path='/user/dashboard' component={UserDashboard} /> 
           <PrivateRoute exact path='/user/private' component={UserDashboard2} />
 
-
           <PrivateRoute exact path='/admin/dashboard' component={AdminDashboard} />  
-          <PrivateRoute exact path='/admin/samples' component={AdminSamples} />  
+          <PrivateRoute exact path='/admin/samples' component={AdminSamples} />
+          <PrivateRoute exact path='/admin/samples/:orderId' component={IndiviualSample} />   
           <PrivateRoute exact path='/admin/browsecereals' component={BrowseCereals} />  
           <PrivateRoute exact path='/admin/browsemodels' component={BrowseModels} />  
           <PrivateRoute exact path='/admin/browsepredictions' component={BrowsePredictions} />
