@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/components/_router-dashboard.scss';
-import inarixLogo from '../images/inarix-logo-h@3x.png'
+import inarixLogo from '../images/inarix-logo-h@3x.png';
 const UserDashboard = () => {
 
 

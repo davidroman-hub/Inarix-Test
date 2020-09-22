@@ -1,0 +1,48 @@
+.__admin-dashboard-flex{
+    display: flex;
+}
+
+.__info-tables{
+    margin-left: 30%;
+    @media(max-width: 769px){
+        margin-left: 0%;
+    }
+}
+
+.admin-links li{
+    width: 50%;
+    margin-left: 25%;
+    @media(max-width: 769px){
+        font-size:16px ;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.__inarix-logo_Dash{
+    margin-top: 30%;
+}
+
+.__inarix-logo_Dash img {
+    width: 300px;
+    @media(max-width: 769px){
+        width: 150px;
+        margin-left: 10%;;
+    }
+}
+.__text-inarix{
+    margin-top: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    @media(max-width: 769px){
+        font-size: 16px;
+        margin-left: 15px;
+    }
+}
+.inarix-logoSm img {
+    width: 200px;
+    @media(max-width: 769px){
+        width: 100px;
+        margin-left: 10%;;
+    }
+}
