@@ -43,7 +43,7 @@ function App() {
           <PrivateRoute exact path='/admin/browsecereals' component={BrowseCereals} />  
           <PrivateRoute exact path='/admin/browsemodels' component={BrowseModels} />  
           <PrivateRoute exact path='/admin/browsepredictions' component={BrowsePredictions} />
-          <PrivateRoute exact path='/admin/browsesamples' component={BrowseSamples} />  
+          {/* <PrivateRoute exact path='/admin/browsesamples' component={BrowseSamples} />   */}
           <PrivateRoute exact path='/admin/browseusers' component={BrowseUsers} />    
 
         </Layout>

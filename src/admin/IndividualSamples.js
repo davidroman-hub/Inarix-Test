@@ -3,7 +3,7 @@ import React,{useState,useEffect} from 'react';
 import {getCookie} from '../helpers/Helpers';
 import moment from 'moment';
 import { read } from './apiAdmin';
-//import SingleMap from './Google';
+import SingleMap from './Google';
 import samplesPhoto from '../images/samples.png';
 import SideBar from './SideBar'
 const IndividualSample = (props) => {
@@ -50,6 +50,7 @@ const IndividualSample = (props) => {
                                         <p className='text-center'>LONGITUDE : {order.metadata?.longitude}</p>
                                         <p className='text-center'>PRECISION : {order.metadata?.precision}</p>
                         </ul>
+                        <SingleMap/>
                     </div>
             </div>
         )

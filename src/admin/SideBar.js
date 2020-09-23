@@ -33,9 +33,9 @@ export const Sidebar = ({history}) => {
                         <li className='btn btn-secondary mb-2'>
                             <Link to='/admin/browsepredictions' style={{textDecoration:'none', color:'#EBEBEB'}}>BROWSE PREDICTIONS</Link>
                         </li>
-                        <li className='btn btn-secondary mb-2'>
+                        {/* <li className='btn btn-secondary mb-2'>
                             <Link to='/admin/browsesamples' style={{textDecoration:'none', color:'#EBEBEB'}}>BROWSE SAMPLES</Link>
-                        </li>  
+                        </li>   */}
                 </ul>
             <div className='journal__new-entry'>
                 {isAuth() && (
