@@ -12,6 +12,10 @@ import PrivateRoute from './user/privateRoute';
 //User
 
 import UserDashboard2 from './user/UserDashboard2';
+import UserSamples from './user/UserSamples';
+import BrowseModelsUser from './user/UserModels';
+import BrowseCerealsUser from './user/UserCereals';
+import UserIndividualSample from './user/UserIndividualSample';
 
 ///Admin
 import AdminDashboard from './admin/AdminDashboard';
@@ -19,7 +23,7 @@ import AdminSamples from './admin/AdminSamples';
 import BrowseCereals from './admin/BrowseCereals';
 import BrowseModels from './admin/BrowseModels';
 import BrowsePredictions from './admin/BrowsePredictions';
-import BrowseSamples from './admin/BrowseSamples';
+// import BrowseSamples from './admin/BrowseSamples';
 import BrowseUsers from './admin/BrowseUsers';
 import IndiviualSample from './admin/IndividualSamples';
 
@@ -34,9 +38,16 @@ function App() {
           <Route exact path='/signin' component={Signin}/>
 
           {/* PrivateRoutes */}
+          {/* USER */}
           <PrivateRoute exact path='/user/dashboard' component={UserDashboard} /> 
           <PrivateRoute exact path='/user/private' component={UserDashboard2} />
+          <PrivateRoute exact path='/user/samples' component={UserSamples} />
+          <PrivateRoute exact path='/user/samples/:orderId' component={UserIndividualSample} />
+          <PrivateRoute exact path='/user/browsemodels' component={BrowseModelsUser} />
+          <PrivateRoute exact path='/user/browsecereals' component={BrowseCerealsUser} />
 
+
+            {/* ADMIN   */}
           <PrivateRoute exact path='/admin/dashboard' component={AdminDashboard} />  
           <PrivateRoute exact path='/admin/samples' component={AdminSamples} />
           <PrivateRoute exact path='/admin/samples/:orderId' component={IndiviualSample} />   
